@@ -52,7 +52,6 @@ assets/
 │ ├── player.png # 玩家角色圖
 │ └── falling.png # 掉落方塊圖
 └── catch.mp3 # 音效
-
 lib/
 └── main.dart # 主遊戲邏輯
 
