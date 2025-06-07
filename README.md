@@ -1,19 +1,71 @@
-# FlutterHW1
+# 🎮 Color Catch - Flutter 小遊戲
 
-A new Flutter project created with FlutLab - https://flutlab.io
+這是一款使用 Flutter 開發的簡單遊戲《Color Catch》！
 
-## Getting Started
+玩家需要透過 **虛擬 Joystick 控制角色**，接住從畫面上方不斷掉落的方塊。在時間限制內獲得更高的分數吧！
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
+## 🧠 本專案由 AI 協助設計並使用 [FlutLab.io](https://flutlab.io) 製作
 
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+本專案部分程式碼與功能設計由 **OpenAI 的 ChatGPT** 協助撰寫整合。  
+整體遊戲開發流程在 **[FlutLab](https://flutlab.io)** 完成，並可直接在網頁上編譯與測試 Flutter 程式。
 
-## Getting Started: FlutLab - Flutter Online IDE
+---
 
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Join the discussion and conversation on https://flutlab.io/residents
+## ✨ 遊戲特色
+
+- 🕹️ **自製虛擬 Joystick 控制角色上下左右移動**
+- 🎼 **掉落成功時播放音效**
+- 🌄 **支援背景圖片與自訂角色 / 方塊圖示**
+- 📈 **難度選擇 Easy / Normal / Hard**
+- ⏱️ **30 秒倒數計時，速度隨時間加快，越玩越刺激**
+- 🏆 **記錄最高分（High Score）功能**
+
+---
+
+## 🎯 難度設定
+
+| 難度 | 掉落間隔 | 每顆得分 |
+|------|----------|----------|
+| Easy | 每 1.5 秒 | +1 分     |
+| Normal | 每 1 秒 | +2 分     |
+| Hard | 每 0.6 秒 | +3 分     |
+
+此外，方塊會隨時間自動加速，增加挑戰性。
+
+---
+
+## 📱 操作方式
+
+- 使用 **畫面下方虛擬搖桿** 控制角色
+- 控制角色移動去接住掉落的方塊
+- 接住即得分，錯過就沒有分數！
+
+---
+
+## 📂 專案結構重點
+
+assets/
+├── images/
+│ ├── background.png # 背景圖
+│ ├── player.png # 玩家角色圖
+│ └── falling.png # 掉落方塊圖
+└── catch.mp3 # 音效
+
+lib/
+└── main.dart # 主遊戲邏輯
+
+▶️ 如何執行
+使用 FlutLab.io 匯入此專案
+
+點擊 "Run" 進行即時模擬
+
+或在本地執行：
+flutter pub get
+flutter run
+
+📜 聲明
+此專案屬於學習與展示用途，由開發者與 AI 協同創作，資源圖片/音效請確認使用授權。
+
+歡迎你 Fork 或延伸創作！
